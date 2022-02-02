@@ -1,0 +1,86 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+Даны стороны прямоугольника a и b Найдите площадь S = a * b и периметр
+S = 2 * (a + b).
+#include <iostream>
+int main() {
+int a, b, P, S;
+a = 5;
+b = 6;
+P = 2 * (a + b);
+S = a * b;
+ std::cout << "a = " << a << std::endl;
+std::cout << "b = " << b << std::endl;
+std::cout << "S = a * b = " << S << std::endl;
+std::cout << "P = 2 * (a + b) = " << P << std::endl;
+ return 0;
+}
+Дан периметр окружности d Найти ее длину L=π*d значение
+π использовать 3.14.
+#include <iostream>
+int main() {
+ const float Pi = 3.14;
+int d = 8;
+ float L = Pi * d;
+ std::cout << "d = " << d << std::endl;
+ std::cout << "L = Pi * d = " << L << std::endl;
+ return 0;
+}
+Даны два числа a и b. Найти их среднее арифметическое: (a + b)/2.
+#include <iostream>
+int main() {
+ int a, b;
+ a = 25;
+ b = 30;
+ float avg = (a + b) / 2;
+ std::cout << "a = " << a << std::endl;
+ std::cout << "b = " << b << std::endl;
+ std::cout << "Average = (a + b) / 2 = " << avg << std::endl;
+return 0
+Даны два ненулевых числа. Найти сумму, разность, и частное их кадров.
+#include <iostream>
+int main() {
+ int a, b, a2, b2, sum, sub, mul;
+ float div;
+ a = 30;
+ b = 10;
+ a2 = a * a;
+ b2 = b * b;
+ sum = a2 + b2;
+ sub = a2 - b2;
+ mul = a2 * b2;
+ div = a2 / b2;
+ std::cout << "a = " << a << std::endl;
+ std::cout << "a^2 = " << a2 << std::endl;
+ std::cout << "b = " << b << std::endl;
+ std::cout << "b^2 = " << b2 << std::endl;
+ std::cout << "a^2 + b^2 = " << sum << std::endl;
+ std::cout << "a^2 - b^2 = " << sub << std::endl;
+ std::cout << "a^2 * b^2 = " << mul << std::endl;
+ std::cout << "a^2 / b^2 = " << div << std::endl;
+ return 0;
+}
+Даны два нулевых числа. Найти сумму, разность, произведение и частное их модулей.
+#include <iostream>
+#include <math.h>
+int main() {
+ int a, a_abs, b, b_abs, sum, sub, mul;
+ float div;
+ a = 50;
+ b = -40;
+ a_abs = abs(a);
+ b_abs = abs(b);
+ sum = a_abs + b_abs;
+ sub = a_abs - b_abs;
+ mul = a_abs * b_abs;
+ div = a_abs / b_abs;
+ std::cout << "a = " << a << std::endl;
+ std::cout << "|a| = " << a_abs << std::endl;
+ std::cout << "b = " << b << std::endl;
+ std::cout << "|b| = " << b_abs << std::endl;
+ std::cout << "|a| + |b| = " << sum << std::endl;
+ std::cout << "|a| - |b| = " << sub << std::endl;
+ std::cout << "|a| * |b| = " << mul << std::endl;
+ std::cout << "|a| / |b| = " << div << std::endl;
+ return 0;
+}
